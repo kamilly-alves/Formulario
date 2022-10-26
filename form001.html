@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+   
+     <!-- action: define o local (através de uma URL) 
+     ao qual serão enviados todos os dados recolhidos do formulário.
+
+     label: O atributo for faz um tipo de link entre a label e o input.
+      Logo o for tem que apontar para o ID do input .-->
+    <h1>Meu primeiro formulario</h1>
+
+  <form action="cadastro.php" method="POST" autocomplete="off">
+     <p><label for="inome">Nome:</label> 
+        <input type="text" name="nome" id="inome"></p>
+     <p><label for="isobrenome">Sobrenome:</label> 
+        <input type="text" name="sobrenome" id="isobrenome"></p>
+     <p><input type="submit" value="Enviar"></p>
+  </form>  
+
+</body>
+</html>
